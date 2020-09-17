@@ -1,0 +1,142 @@
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+html .main,
+body .main {
+  width: 100%;
+  height: auto;
+}
+html .main ul,
+body .main ul {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+html .main ul li,
+body .main ul li {
+  display: block;
+  width: 100%;
+  height: 14.4vw;
+  border-bottom: 0.1333vw solid #eeeeee;
+}
+html .main ul li .left,
+body .main ul li .left {
+  width: 26.6667vw;
+  height: 100%;
+  float: left;
+  padding-left: 4.1333vw;
+  box-sizing: border-box;
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  line-height: 14.4vw;
+}
+html .main ul li .right,
+body .main ul li .right {
+  width: 73.3333vw;
+  height: 100%;
+  float: right;
+  line-height: 15.4vw;
+}
+html .main ul li .right input,
+body .main ul li .right input {
+  width: 80%;
+  height: 90%;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  color: #666666;
+  font-size: 4vw;
+}
+html .main ul li .right input::placeholder,
+body .main ul li .right input::placeholder {
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+html .main ul li .right .jiantou,
+body .main ul li .right .jiantou {
+  display: block;
+  float: right;
+  margin-right: 4.6667vw;
+  font-size: 4vw;
+}
+html .main ul li:nth-child(1),
+body .main ul li:nth-child(1) {
+  height: 11.2vw;
+  background-color: #f7f7f7;
+  font-size: 4vw;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #343434;
+  line-height: 11.2vw;
+  text-align: center;
+}
+html .main ul li:nth-child(10) .right,
+body .main ul li:nth-child(10) .right {
+  width: 40vw;
+  float: left;
+}
+html .main ul li:nth-child(10) .rightBtn,
+body .main ul li:nth-child(10) .rightBtn {
+  width: 26.6667vw;
+  height: 100%;
+  float: right;
+  line-height: 14.4vw;
+  font-size: 4vw;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #3694F6;
+}
+html .main ul .bottom,
+body .main ul .bottom {
+  width: 100%;
+  height: 33.0667vw;
+  background-color: #f7f7f7;
+}
+html .main ul .bottom .contract,
+body .main ul .bottom .contract {
+  width: 100%;
+  height: 4vw;
+  padding-top: 6.4vw;
+}
+html .main ul .bottom .contract .selectIcon,
+body .main ul .bottom .contract .selectIcon {
+  width: 4.2667vw;
+  height: 4.2667vw;
+  border-radius: 50%;
+  border: 1px solid #9a9a9a;
+  margin-left: 3.8667vw;
+  margin-right: 3.8667vw;
+  float: left;
+}
+html .main ul .bottom .contract .message,
+body .main ul .bottom .contract .message {
+  float: left;
+  font-size: 3.4667vw;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #666666;
+}
+html .main ul .bottom .contract .message span,
+body .main ul .bottom .contract .message span {
+  color: #3694f6;
+}
+html .main ul .bottom .btn,
+body .main ul .bottom .btn {
+  width: 84.2667vw;
+  height: 10.6667vw;
+  background: #CCCCCC;
+  border-radius: 1.3333vw;
+  font-size: 4vw;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 10.6667vw;
+  margin: 6.5333vw auto 0 auto;
+}

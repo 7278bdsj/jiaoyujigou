@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/merchant.css">
+  <link rel="stylesheet" href="./css/mobileSelect.css">
+  <script src="./js/jquery-2.2.1.min.js"></script>
+  <script src="./js/mobileSelect.js"></script>
+  <script src="./js/selectDate.js"></script>
+  <link rel="stylesheet" href="./css/LArea.css">
+  <title>邀请页</title>
+  <style type="text/css">
+    html,body{
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        font-size: 16px;
+        font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+        height: 100%;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .list{
+        margin: 50px 25px 0 25px;
+        text-align: center;
+    }
+    .list>li{
+        list-style: none;
+        border: #CCCCCC solid 1px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+  </style> 
+  <style> 
+  .colors{
+      color: #E60012 !important;
+  }
+    .mobileSelect .content{
+          width: 96% !important;
+          border-radius: 0.3rem !important;
+          bottom: 1rem !important;
+          margin-left: 2% !important;
+    }
+    .cancel{
+        color: #E60012 !important;
+    }
+    .title{
+        color: #333 !important;
+    }
+    .ensure{
+        color: #007AFF !important;
+    }
+    .selectLine{
+      display: flex;
+      align-items: center;
+    }
+    .selectLine span{
+      width: 33.3%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <ul class="vueBox">
+      <li class="title">
+        欢迎注册雅诗兰黛省级经销商
+      </li>
+      <li class="name">
+        <div class="left">姓名</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请输入您的姓名">
+        </div>
+      </li>
+      <li class="gender">
+        <div class="left">性别</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请选择">
+          <div class="jiantou">></div>
+        </div>
+      </li>
+      <li class="date">
+        <div class="left">出生年月</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请选择" id="date">
+          <div class="jiantou">></div>
+        </div>
+      </li>
+      <li class="ID_card">
+        <div class="left">身份证号</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请输入身份证号码">
+          <div class="jiantou">></div>
+        </div>
+      </li>
+      <li class="address">
+        <div class="left">所在地区</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请选择" id="city" value="">
+          <input id="value1" type="hidden" value="20,234,504"/>
+          <div class="jiantou">></div>
+        </div>
+      </li>
+      <li class="detailAddress">
+        <div class="left">详细地址</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="街道、小区、单位楼、门牌号等">
+        </div>
+      </li>
+      <li class="password">
+        <div class="left">密码</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请输入密码">
+        </div>
+      </li>
+      <li class="confirmPassword">
+        <div class="left">确认密码</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请重复密码">
+        </div>
+      </li>
+      <li class="phone">
+        <div class="left">手机号码</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请输入手机号码">
+        </div>
+      </li>
+      <li class="code">
+        <div class="left">验证码</div>
+        <div class="right">
+          <input type="text" name="name" placeholder="请输入验证码">
+        </div>
+        <div class="rightBtn">获取验证码</div>
+      </li>
+      <li class="Icode">
+        <div class="left">邀请码</div>
+        <div class="right">
+          8EDE5662
+        </div>
+      </li>
+      <li class="inputFile">
+        <h2>上传资质证照</h2>
+        <div class="file1">
+         <input type="file" class="fileInput1" id="fileInput1">
+         <label class="fileItem" for="fileInput1">
+          <div class="jiaIcon">
+            <img src="./image//login_zz_add_btn@2x.png" alt="">
+          </div>
+          <span>上传营业执照</span>
+         </label>
+        </div>
+        <div class="file2">
+          <input type="file" class="fileInput2" id="fileInput2">
+          <label class="fileItem" for="fileInput2">
+            <img class="bg" src="./image/login_id_zm@2x.png" alt="">
+          <div class="jiaIcon">
+            <img src="./image//login_zz_add_btn@2x.png" alt="">
+          </div>
+          <span>上传身份证正面照</span>
+          </label>
+        </div>
+        <div class="file3">
+          <input type="file" class="fileInput3" id="fileInput3">
+          <label class="fileItem" for="fileInput3">
+            <img class="bg" src="./image/login_id_fm@2x.png" alt="">
+          <div class="jiaIcon">
+            <img src="./image//login_zz_add_btn@2x.png" alt="">
+          </div>
+          <span>上传身份证反面照</span>
+          </label>
+        </div>
+      </li>
+      <li class="bottom">
+        <div class="contract">
+          <div class="selectIcon"></div>
+          <div class="message">
+            已阅读并同意
+            <span>
+              《用户协议》
+            </span>
+            和
+            <span>
+              《隐私政策》
+            </span>
+          </div>
+        </div>
+        <div class="btn">立即打开</div>
+        </li>
+    </ul>
+  </div>
+</body>
+<script>
+$.selectYY_MM_DD("#date");
+</script>
+<!-- 初始化城市选择 -->
+<script src="js/LAreaData1.js"></script>
+<script src="js/LAreaData2.js"></script>
+<script src="js/LArea.js"></script>
+<script>
+  var area1 = new LArea();
+  area1.init({
+      'trigger': '#city', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+      'valueTo': '#value1', //选择完毕后id属性输出到该位置
+      'keys': {
+          id: 'id',
+          name: 'name'
+      }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+      'type': 1, //数据源类型
+      'data': LAreaData //数据源
+  });
+  area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+  var area2 = new LArea();
+  area2.init({
+      'trigger': '#demo2',
+      'valueTo': '#value2',
+      'keys': {
+          id: 'value',
+          name: 'text'
+      },
+      'type': 2,
+      'data': [provs_data, citys_data, dists_data]
+  });
+  </script>
+</html>
